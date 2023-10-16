@@ -1,0 +1,149 @@
+body {
+    background-image: linear-gradient(to top, #1a85c8 0%, #7cd9d6 100%);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box-container {
+        border: 1px solid #ccc;
+        background-repeat: repeat;
+        width: 500px;
+        height: 500px;
+        border-radius: 35px;
+        border-color: black;
+        padding: 40px; 
+        background-image: linear-gradient(-45deg, #5d4ad9 0%, #8be372ac 100%);
+        position: absolute;
+        top: 55%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+}
+
+h1{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.h3 h3{
+    margin-top: -10px;
+}
+
+h3{
+    color: black;
+}
+
+.candidate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+label[for="candidate_name"]{
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+label[for="voter_id"]{
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+.candidate {
+    display: flex;
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+label {
+    /* margin: 0 10px; */
+    margin-left: 0px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #06defa;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: #3a0df1;
+}
+
+h2 {
+    margin-top: 20px;
+} 
+
+#heading{
+    margin-top: -10px;
+}
+
+input[type="radio"]{
+    transform: scale(1.3);
+}
+
+input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    outline: none;
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+input[type="radio"]:checked {
+    background-color: #333; 
+}
+
+label {
+    display: inline-flex; 
+    align-items: center; 
+}
+
+.decorative-border{
+    background-repeat: repeat;
+    background-size: cover;
+    border: 15px solid transparent;
+    border-image: linear-gradient(to bottom right, #ffd700,#ff8c00,#ff4500,#ff6347,#ff7f50) 30; 
+    border-image-slice: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sbs{
+    display: inline-block;
+}
+
+#voteResults div {
+    color: black;
+    padding-bottom: 2%;
+}
+
+#winner{
+    color: black;
+    margin-top: -5%;
+}

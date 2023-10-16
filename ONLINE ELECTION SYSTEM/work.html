@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Election System</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+
+<body>
+    <h1 style="color: black;">Online Election Portal</h1>
+    <div class="decorative-border">
+    <div class="box-container">
+        <div class="h3">
+    <h3>Voter credentials</h3> </div>       
+    <form id="votingForm" action="/submit_vote" method="post">
+        <label for="candidate_name">Candidate Name</label>&nbsp;
+        <input type="text" id="candidate_name" name="candidate_name" required><br><br>
+        <label for="voter_id">Voter ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="voter_id" name="voter_id" required><br><br></form>
+        <h3>Elect Candidate</h3>
+        <h3 id="heading">Participants:</h3>
+        <div class="candidate-list">
+            <div class="candidate">
+                <input type="radio" id="candidate1" name="candidate" value="candidate1">
+                <label for="candidate1">participant-1</label>
+            </div>
+            <div class="candidate">
+                <input type="radio" id="candidate2" name="candidate" value="candidate2">
+                <label for="candidate2">participant-2</label>
+            </div>
+            <div class="candidate">
+                <input type="radio" id="candidate3" name="candidate" value="candidate3">
+                <label for="candidate3">participant-3</label>
+            </div>
+        </div><br>
+
+        <button onclick="castVote()"  style="font-size: larger;">Vote</button>
+        <button id="show-result-btn" onclick="showResults()" style="font-size: larger;">Results</button><br>
+
+        <div class="sbs">
+        <h2 style="color: black;">Total Votes:</h2>
+        <div id="voteResults"></div>
+
+        <h2 style="color: black;">Winner:</h2>
+        <div id="winner"></div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="work.js"></script>
+
+</body>
+</html> 
